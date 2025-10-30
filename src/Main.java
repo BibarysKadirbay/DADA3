@@ -72,7 +72,7 @@ public class Main {
             double primMs = (t1 - t0) / 1_000_000.0;
             double kruskalMs = (t3 - t2) / 1_000_000.0;
 
-            // Build ordered output object for this graph
+
             LinkedHashMap<String, Object> outGraph = new LinkedHashMap<>();
             outGraph.put("graph_id", graphId);
 

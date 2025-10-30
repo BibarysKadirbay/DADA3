@@ -11,7 +11,7 @@ public class Kruskal {
     }
 
     public static Result run(Graph g) {
-        // Sort edges by weight (stable tie-breakers) with comparison counting
+
         List<Edge> sorted = new ArrayList<>(g.edges);
         long[] comps = new long[1];
         MergeSort.sort(sorted, (e1, e2) -> {

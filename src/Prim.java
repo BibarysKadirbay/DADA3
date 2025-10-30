@@ -12,7 +12,7 @@ public class Prim {
 
     private static class PQItem {
         int weight;
-        String u, v;  // u -> v
+        String u, v;
         PQItem(int w, String u, String v) { this.weight = w; this.u = u; this.v = v; }
     }
 
@@ -28,7 +28,7 @@ public class Prim {
         Set<String> vis = new HashSet<>();
         vis.add(start);
 
-        // custom min-heap with op counting
+
         MinHeap<PQItem> heap = new MinHeap<>((a,b) -> {
             if (a.weight != b.weight) return Integer.compare(a.weight, b.weight);
             int c = a.u.compareTo(b.u);

@@ -4,7 +4,7 @@ public class Edge {
     public final int weight;
 
     public Edge(String from, String to, int weight) {
-        // enforce canonical order in tie-breaking (for stable JSON output)
+
         if (from.compareTo(to) <= 0) {
             this.from = from;
             this.to = to;
